@@ -58,7 +58,7 @@ const AuthForm = () => {
         if (creds.username && creds.password.length >= 8) {
             setLoading(true);
             try {
-                const response = await fetch('http://127.0.0.1:8000/login/', {
+                const response = await fetch('https://brunois10.pythonanywhere.com/login/', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(creds),
@@ -88,7 +88,7 @@ const AuthForm = () => {
     const handleRegister = async () => {
         if (regData.email && creds.password.length >= 8 && creds.password === confirmPwd) {
             try {
-                const response = await fetch('http://127.0.0.1:8000/register/', {
+                const response = await fetch('https://brunois10.pythonanywhere.com/register/', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(regData),

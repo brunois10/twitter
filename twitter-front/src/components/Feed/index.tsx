@@ -27,7 +27,7 @@ const TweetFeed = () => {
             }
 
             try {
-                const tweetResponse = await fetch('http://127.0.0.1:8000/tweets/', {
+                const tweetResponse = await fetch('https://brunois10.pythonanywhere.com/tweets/', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ const TweetFeed = () => {
     const postTweet = async () => {
         if (newTweet.content.length > 30 && newTweet.content.length < 200) {
             try {
-                const postResponse = await fetch('http://127.0.0.1:8000/tweets/', {
+                const postResponse = await fetch('https://brunois10.pythonanywhere.com/tweets/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
