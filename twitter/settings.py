@@ -26,11 +26,12 @@ SECRET_KEY = "django-insecure-#jtc(am*^9y%q!!%e04yplz)0eeyjw7dxp)wxsqco&7qz*x7rm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'brunois10.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'brunois10.pythonanywhere.com', 'https://twitter-aqkykn5zg-brunois10s-projects.vercel.app/']
 
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://twitter-aqkykn5zg-brunois10s-projects.vercel.app/",
 ]
 
 
