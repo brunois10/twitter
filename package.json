@@ -2,5 +2,8 @@
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
     "eslint": "^8.57.0"
+  },
+  "dependencies": {
+    "react-spinners": "^0.14.1"
   }
 }
